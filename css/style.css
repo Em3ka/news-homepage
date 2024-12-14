@@ -65,6 +65,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: var(--fs-15);
   line-height: 1.7;
+  background-color: var(--off-white);
   color: var(--dark-grayish-blue);
 }
 
@@ -165,7 +166,7 @@ body {
 }
 
 .navbar__menu-item {
-  color: var(--very-dark-blue);
+  color: var(--dark-grayish-blue);
   font-size: var(--fs-18);
   line-height: 1.3;
 
