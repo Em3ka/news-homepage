@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Em3ka/news-homepage)
-- Live Site URL: [News Homepage](https://news-hompage-fem.netlify.app)
+- Live Site URL: [News Homepage](https://news-homepage-psi-inky.vercel.app)
 
 ## My process
 
