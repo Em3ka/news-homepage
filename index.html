@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header wrapper">
+      <a href="/">
+        <img
+          src="./assets/images/logo.svg"
+          alt="News Home"
+          class="header__logo"
+        />
+      </a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        <button
+          class="open__nav-btn"
+          id="openNavBtn"
+          aria-label="Open Navigation Menu"
+          aria-expanded="false"
+          aria-controls="navbar__menu"
+        >
+          <svg
+            aria-hidden="true"
+            width="40"
+            height="17"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+        </button>
+
+        <div id="navbar__menu" class="navbar__menu">
+          <button
+            class="close__nav-btn"
+            id="closeNavBtn"
+            aria-label="Close Navigation Menu"
+            aria-controls="navbar__menu"
+          >
+            <svg
+              aria-hidden="true"
+              width="32"
+              height="31"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+              </g>
+            </svg>
+          </button>
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="">New</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="">Popular </a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="">Trending</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="layout-wrapper wrapper">
+      <section class="hero">
+        <picture class="hero__image">
+          <source
+            media="(min-width: 48rem)"
+            srcset="./assets/images/image-web-3-desktop.jpg"
+            width="1460"
+            height="600"
+          />
+
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="Colorful geometric blocks arranged in a pattern, featuring circles, squares, and triangles in red, blue, yellow, and black"
+            width="686"
+            height="600"
+          />
+        </picture>
+
+        <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
+
+        <div class="hero__content">
+          <p class="hero__description">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="" class="btn read-btn">Read more</a>
+        </div>
+      </section>
+
+      <section class="new-article">
+        <h2 class="new-article__heading">New</h2>
+
+        <ul class="new-article__list flow-content">
+          <li class="new-article__item">
+            <article class="new-article__content">
+              <h3>
+                <a href="#" class="new-article__title"
+                  >Hydrogen VS Electric Cars</a
+                >
+              </h3>
+              <p class="new-article__description">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+          </li>
+
+          <li class="new-article__item">
+            <article class="new-article__content">
+              <h3>
+                <a href="#" class="new-article__title"
+                  >The Downsides of AI Artistry</a
+                >
+              </h3>
+              <p class="new-article__description">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+          </li>
+
+          <li class="new-article__item">
+            <article class="new-article__content">
+              <h3>
+                <a href="#" class="new-article__title"
+                  >Is VC Funding Drying Up?</a
+                >
+              </h3>
+              <p class="new-article__description">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="blog">
+        <article class="blog__item">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="A retro computer setup with a small CRT monitor, a keyboard, a joystick, game cartridges, and cassette tapes is displayed under colorful lighting"
+            width="200"
+            height="254"
+            class="blog__image"
+          />
+          <h2 class="blog__number">01</h2>
+          <h3 class="blog__heading">
+            <a href="#" class="blog__title">Reviving Retro PCs</a>
+          </h3>
+          <p class="blog__description">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </article>
+
+        <article class="blog__item">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="Close-up of a black keyboard with red backlighting, showing a partial view of the keys"
+            width="200"
+            height="254"
+            class="blog__image"
+          />
+          <h2 class="blog__number">02</h2>
+          <h3 class="blog__heading">
+            <a href="#" class="blog__title">Top 10 Laptops of 2022</a>
+          </h3>
+          <p class="blog__description">
+            Our best picks for various needs and budgets.
+          </p>
+        </article>
+
+        <article class="blog__item">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="A white gaming controller is suspended in mid-air above an outstretched hand against a gray background"
+            width="200"
+            height="254"
+            class="blog__image"
+          />
+          <h2 class="blog__number">03</h2>
+          <h3 class="blog__heading">
+            <a href="#" class="blog__title">The Growth of Gaming</a>
+          </h3>
+          <p class="blog__description">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
